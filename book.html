@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>在线留言_(16mn,27simn)无缝钢管|钢管|无缝管|无缝钢管厂-山东中腾</title>
+<meta name="Keywords" content="无缝钢管,钢管,无缝管,无缝钢管厂,钢管厂,16mn无缝钢管,27simn无缝钢管,16mn钢管,27simn钢管" />
+<meta name="Description" content="山东中腾无缝钢管厂(15863542222)销售各种规格无缝钢管,钢管,无缝管,材质有16mn,27simn,q345b,q355b,20#,45#,42crmo等,及时提供全国的无缝钢管价格,市场行情等信息.我厂16mn无缝钢管,27simn无缝钢管货源充足,价格合理,厂家直销." />
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.superslide.js"></script>
+<script>
+$(function()
+{
+	$(".form_book").validator(
+	{
+		stopOnError:true,
+		theme:'yellow_right_effect',
+		ignore:':hidden',
+		valid:function(form)
+		{
+			$.fn.tips({type:'loading',content:'数据提交中'});
+			$.ajax(
+			{
+				url:"?act=add",
+				type:"post",
+				data:$(form).serialize(),
+				success:function(data){
+					data=jQuery.parseJSON(data);
+					if(data.status!="y"){$.fn.tips({content:data.info});}
+					if(data.status=="y")
+					{
+						var info=data.info.substring(1);
+						$.fn.tips({type:"ok",content:info});
+						$(".form_book")[0].reset();
+						if(data.info.substring(0,1)==2){setTimeout(function(){location.href='?';},1500)}
+					}
+				}
+			});
+		}
+	});
+})
+</script>
+<script src="js/mobile.js"></script>
+<script src="js/base.js"></script>
+
+</head>
+<body>
+
+  <div class="top">
+     <div class="container">
+       <span class="fl">欢迎光临山东中腾金属制品有限公司网站 !</span>
+       
+     </div>
+  </div>
+  <div class="clearfix"></div>
+<div class="o-header">
+    <div class="container clearfix">
+        <div class="logo"><a href="index.html" title="(16mn,27simn)无缝钢管|钢管|无缝管|无缝钢管厂-山东中腾"><img src="images/logo.png" alt="(16mn,27simn)无缝钢管|钢管|无缝管|无缝钢管厂-山东中腾"></a></div>
+        <div class="tel">咨询热线：<strong>15863542222<br/>0635-3705555</strong></div>
+    </div>
+</div>
+<div class="o-nav">
+    <div class="container">
+        <ul class="clearfix">
+            <li><a href="index.html" title="网站首页">网站首页</a></li>
+            
+            <li ><a href="about.html#" title="关于我们">关于我们</a></li>
+			
+            <li ><a href="product.html#" title="产品中心">产品中心</a></li>
+			
+            <li ><a href="news.html#" title="新闻资讯">新闻资讯</a></li>
+			
+            <li ><a href="car.html#" title="车间展示">车间展示</a></li>
+			
+            <li ><a href="contact.html#" title="联系我们">联系我们</a></li>
+			
+            <li ><a href="book.html#" title="在线留言">在线留言</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="o-slideBox">
+    <div class="hd"><ul></ul></div>
+    <div class="bd">
+        <ul>
+            <li style="background-image: url(images/banner1.jpg);"></li>
+        	<li style="background-image: url(images/banner2.jpg);"></li>
+        </ul>
+    </div>
+</div>
+<script>
+    $('.o-slideBox').slide({titCell: '.hd ul', mainCell: '.bd ul', effect: 'fold', autoPlay: true, autoPage: '<li></li>'});
+</script>
+
+<div class="o-sou">
+    <div class="container clearfix">
+        <div class="hot">
+            <strong>热门关键词：</strong>
+            无缝钢管,钢管,无缝管,无缝钢管厂,钢管厂,16mn无缝钢管,27simn无缝钢管,16mn钢管,27simn钢管       
+        </div>
+        <div class="hform">
+            <form action="javascript:;" method="get" onsubmit="return checksearch(this)">
+                <input type="text" name="key" value="请输入关键字" onfocus="if(this.value==defaultValue)this.value=''" onblur="if(this.value=='')this.value=defaultValue">
+                <button type="submit"></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="o-curmbs">
+        <span>您的位置：</span>
+        <a href="index.html" title="首页">首页</a> > 在线留言
+	</div>
+
+    <div class="o-section">
+        <div class="o-section-title">在线留言</div>
+
+        <div>
+                <form class="form_book" method="post">
+                    <div class="bookadd">
+                        <div class="label">姓名：<span>*</span></div>
+                        <div class="enter"><input type="text" name="t0" id="nicekname" maxlength="20" data-rule="姓名:required;" class="ip" /></div>
+                        <div class="label">内容：<span>*</span></div>
+                        <div class="enter"><textarea name="t1" cols="55" rows="5" data-rule="内容:required;" class="ip" /></textarea></div>
+                        <div class="label">手机号码：<span>*</span></div>
+                        <div class="enter"><input type="text" name="t2" maxlength="11" data-rule="手机号码:required;mobile" class="ip" /></div>
+                        <div class="label">性别：</div>
+                        <div class="enter"><select name="t3" id="sex" class="ip"><option value="0">保密</option><option value="1">男</option><option value="2">女</option></select></div>
+                        <div class="label">验证码：<span>*</span></div>
+                        <div class="enter"><input type="text" name="t4" id="t4" size="4" maxlength="4" data-rule="验证码:required;" class="ip" /> <img src="images/imgcode.jpg" title="看不清楚？点击刷新！" align="absmiddle" id="imgcode" onClick="this.src+='&'+Math.random();" /><span for="t4" class="msg-box"></span></div>
+                        <div class="label"></div>
+                        <div class="enter"><input type="submit" value="提交" class="bnt" /></div>
+                    </div>
+                    </form>
+        </div>
+    </div>
+</div>
+
+<div class="o-footer">
+    <div class="container clearfix">
+        <div class="info">
+            <div class="nav">
+                <a href="index.html" title="网站首页">网站首页</a>
+                <span>|</span>
+				
+				<a href="about.html#" title="关于我们">关于我们</a>
+                <span>|</span>
+				
+				<a href="product.html#" title="产品中心">产品中心</a>
+                <span>|</span>
+				
+				<a href="news.html#" title="新闻资讯">新闻资讯</a>
+                <span>|</span>
+				
+				<a href="car.html#" title="车间展示">车间展示</a>
+                <span>|</span>
+				
+				<a href="contact.html#" title="联系我们">联系我们</a>
+                <span>|</span>
+				
+				<a href="book.html#" title="在线留言">在线留言</a>
+            </div>
+            <div class="text">
+                <P>电话：0635-8886106 8877153 8877253 8877353 手机：15863542222 地址：山东省聊城市开发区中腾工业园区</P>
+				<p>版权所有：山东中腾金属制品有限公司   <a href="http://beian.miit.gov.cn" title="" rel="nofollow" target="_blank"></a></p>
+				<p>热门标签：<a href="index.html#tag=%E6%97%A0%E7%BC%9D%E9%92%A2%E7%AE%A1" title="无缝钢管" >无缝钢管 (17)</a><a href="index.html#tag=%E9%92%A2%E7%AE%A1" title="钢管" >钢管 (5)</a><a href="index.html#tag=%E6%97%A0%E7%BC%9D%E9%92%A2%E7%AE%A1%E5%8E%82" title="无缝钢管厂" >无缝钢管厂 (4)</a><a href="index.html#tag=%E6%97%A0%E7%BC%9D%E7%AE%A1" title="无缝管" >无缝管 (4)</a><a href="index.html#tag=27simn%E6%97%A0%E7%BC%9D%E9%92%A2%E7%AE%A1" title="27simn无缝钢管" >27simn无缝钢管 (3)</a><a href="index.html#tag=%E6%97%A0%E7%BC%9D%E7%AE%A1%E8%A7%84%E6%A0%BC" title="无缝管规格" >无缝管规格 (2)</a><a href="index.html#tag=30crmo%E6%97%A0%E7%BC%9D%E7%AE%A1" title="30crmo无缝管" >30crmo无缝管 (2)</a><a href="index.html#tag=%E6%97%A0%E7%BC%9D%E9%92%A2%E7%AE%A1%E2%80%8B" title="无缝钢管​" >无缝钢管​ (2)</a><a href="index.html#tag=Q345C%E9%92%A2%E7%AE%A1" title="Q345C钢管" >Q345C钢管 (2)</a><a href="index.html#tag=cr5mo%E9%92%A2%E7%AE%A1" title="cr5mo钢管" >cr5mo钢管 (2)</a>   <a href="/plug/tags.asp" title="更多">更多</a></p>
+			</div>
+        </div>
+    </div>
+    <div class="o-footer-link">
+        <div class="container">
+            <p>
+                友情链接：
+                <a href="http://www.zgjmgg.com/" title="45#精密钢管" target="_blank">45#精密钢管</a><a href="http://www.lcsjtwz.com/" title="GB5310无缝钢管" target="_blank">GB5310无缝钢管</a><a href="http://www.40cr27simn.com/" title="27simn圆钢" target="_blank">27simn圆钢</a><a href="http://www.sdshsk.com/" title="干式变压器" target="_blank">干式变压器</a><a href="http://www.76yo.com/" title="干式变压器" target="_blank">干式变压器</a><a href="http://www.jmggjg.com/" title="干式变压器" target="_blank">干式变压器</a><a href="http://www.sdhzgt.com/" title="42crmo无缝管" target="_blank">42crmo无缝管</a><a href="http://www.lcsqq.com/" title="20#精密无缝钢管" target="_blank">20#精密无缝钢管</a><a href="http://www.bxgangsi.com" title="气密门" target="_blank">气密门</a><a href="http://www.sdwhyg.com/" title="工具钢" target="_blank">工具钢</a><a href="http://www.tianxiangwff.com/" title="方矩管" target="_blank">方矩管</a><a href="http://www.rthbwfgg.com/" title="重庆无缝钢管" target="_blank">重庆无缝钢管</a><a href="http://www.lchtd.com/" title="45#无缝钢管" target="_blank">45#无缝钢管</a><a href="http://www.bxgqg.net/" title="毛细不锈钢管" target="_blank">毛细不锈钢管</a><a href="http://www.sdgyglg.com/" title="GB3087低中压锅炉管" target="_blank">GB3087低中压锅炉管</a><a href="http://www.bxgbpf.com/" title="冷拔管" target="_blank">冷拔管</a><a href="http://www.gygzg.com/" title="贵阳角钢" target="_blank">贵阳角钢</a><a href="http://www.27simn.com/" title="27simn钢管" target="_blank">27simn钢管</a><a href="http://www.hongxiuban.com/" title="40cr钢板" target="_blank">40cr钢板</a><a href="http://www.jingmi-guan.com/" title="27simn钢管" target="_blank">27simn钢管</a><a href="http://www.lchetong.com/" title="q345b无缝钢管" target="_blank">q345b无缝钢管</a><a href="http://www.27simnhbgg.com/" title="27simn无缝钢管" target="_blank">27simn无缝钢管</a><a href="http://www.gang-guan.com/" title="无缝钢管" target="_blank">无缝钢管</a><a href="http://www.lchengyu.com" title="16mn无缝管" target="_blank">16mn无缝管</a><a href="http://www.qianjs.com/" title="铅板" target="_blank">铅板</a><a href="http://www.lsbsf.com/" title="无缝钢管" target="_blank">无缝钢管</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<style type="text/css">
+    .pagination a.cur {
+        background-color: #0a6b9d;
+    }
+    .pagination a:hover {
+        color: #0a6b9d;
+        border-color: #0a6b9d;
+    }
+</style>
+</body>
+</html>
